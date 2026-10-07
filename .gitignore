@@ -1,0 +1,45 @@
+# Virtual environments
+venv/
+scrfd_convert_venv/
+.venv/
+env/
+
+# Vendored InsightFace repo clone (install from pip instead)
+insightface/
+
+# Model weights (large; download separately, see README)
+*.pt
+*.pth
+*.onnx
+models/
+
+# Personal / biometric data - never commit
+database/*
+!database/.gitkeep
+images/*
+!images/.gitkeep
+output/
+*.npy
+*.db
+*.sqlite
+*.sqlite3
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Secrets
+.env
+*.env
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs & runs
+*.log
+runs/
